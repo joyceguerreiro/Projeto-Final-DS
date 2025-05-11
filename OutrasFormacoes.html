@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Outras Formações</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-container {
+            width: 40%;
+            height: auto;
+            margin: auto;
+        }
+
+        .icon-cell {
+            width: 40px;
+            /* largura fixa menor */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            /* reduz espaço entre ícone e input */
+        }
+
+        .input-cell {
+            width: 90%;
+        }
+
+        .custom-button {
+            width: 20%;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .custom-table th {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        /*espaço entre o label e o input */
+        .w3-half label {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            display: block;
+            text-align: center;
+        }
+
+        /*margem dos inputs */
+        .w3-half .w3-row {
+            margin-bottom: 10px;
+            /* Adiciona um pouco de espaço entre os inputs */
+            display: flex;
+            align-items: center;
+            /* Alinha o ícone e o input verticalmente no centro */
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+    <!-- Título -->
+    <div class="w3-content w3-padding-64 w3-text-grey">
+        <h2 class="w3-text-cyan">Outras Formações</h2>
+    </div>
+
+    <!-- Formulário -->
+    <form class="w3-container w3-card-4 w3-white w3-round-large form-container">
+
+        <!-- Datas -->
+        <div class="w3-row w3-margin-bottom">
+            <div class="w3-half w3-padding-small">
+                <label class="w3-text-grey">Data Inicial</label>
+                <div class="w3-row">
+                    <div class="w3-col icon-cell">
+                        <i class="fa fa-calendar w3-xlarge w3-text-blue"></i>
+                    </div>
+                    <div class="w3-rest input-cell">
+                        <input class="w3-input w3-border w3-round-large" type="date" placeholder="dd/mm/aaaa">
+                    </div>
+                </div>
+            </div>
+            <div class="w3-half w3-padding-small">
+                <label class="w3-text-grey">Data Final</label>
+                <div class="w3-row">
+                    <div class="w3-col icon-cell">
+                        <i class="fa fa-calendar w3-xlarge w3-text-blue"></i>
+                    </div>
+                    <div class="w3-rest input-cell">
+                        <input class="w3-input w3-border w3-round-large" type="date" placeholder="dd/mm/aaaa">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descrição -->
+        <div class="w3-row w3-margin-bottom">
+            <div style="width: 100%;">
+                <div class="w3-row w3-padding-small" style="display: flex; align-items: center;">
+                    <div style="margin-right: 10px;">
+                        <i class="fa fa-list w3-xlarge w3-text-blue"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <input class="w3-input w3-border w3-round-large" type="text"
+                            placeholder="Ex: Curso de Inglês - Inglês City">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão -->
+        <div class="w3-center w3-margin-bottom">
+            <button type="submit" class="w3-button w3-blue w3-round-large custom-button">
+                <i class="fa fa-user-plus w3-xlarge"></i>
+            </button>
+        </div>
+    </form>
+
+    <!-- Tabela -->
+    <div class="w3-content w3-margin-top">
+        <table class="w3-table-all w3-centered custom-table">
+            <thead>
+                <tr>
+                    <th>Início</th>
+                    <th>Fim</th>
+                    <th>Descrição</th>
+                    <th>Apagar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados dinâmicos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
+
+<!--
+    Este código HTML representa uma página de "Outras Formações" com um formulário para adicionar formações e uma tabela para exibir as formações adicionadas.
+    O formulário inclui campos para data inicial, data final e descrição da formação, além de um botão para enviar os dados.
+    A tabela exibe as formaçõegit add View/OutrasFormacoes.html
+s com colunas para início, fim, descrição e uma opção para apagar a formação.                     
